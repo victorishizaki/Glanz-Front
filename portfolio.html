@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | GLANZ - Experiências Memoráveis em Eventos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+</head>
+<body>
+    <!-- Navbar (idêntico às outras páginas) -->
+    <nav class="navbar navbar-expand-lg top-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1>GLANZ<span class="dot">.</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html"><i class="fas fa-users"></i> Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html"><i class="fas fa-briefcase"></i> Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Portfólio -->
+    <header class="hero-portfolio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8 text-center mx-auto">
+                    <h1><span class="highlight">Nossos</span> Cases</h1>
+                    <p class="hero-subtitle">Eventos que criamos e que marcaram histórias</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filtro de Categorias -->
+    <section class="filtro-categorias py-4 bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-categoria active" data-filter="*">Todos</button>
+                        <button class="btn btn-categoria" data-filter=".corporativo">Corporativos</button>
+                        <button class="btn btn-categoria" data-filter=".social">Sociais</button>
+                        <button class="btn btn-categoria" data-filter=".cultural">Culturais</button>
+                        <button class="btn btn-categoria" data-filter=".hibrido">Híbridos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Portfólio -->
+    <section class="portfolio-grid py-5">
+        <div class="container">
+            <div class="row g-4 portfolio-container">
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item corporativo">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/evento-tech.png" alt="Tech Conference 2023" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h3>Tech Conference 2023</h3>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-users"></i> 1.200+ participantes</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> São Paulo</span>
+                                </div>
+                                <a href="assets/images/evento-tech.png" class="portfolio-zoom" data-lg-size="1600-1067">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Tech Conference 2023</h4>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-verde">Corporativo</span>
+                                <span class="badge bg-dark">Tecnologia</span>
+                            </div>
+                            <a href="portfolio-detalhe-tech.html" class="btn btn-sm btn-outline-verde mt-3">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item social">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/casamento.jpg" alt="Casamento Luxury" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h3>Casamento Luxury</h3>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-users"></i> 300 convidados</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Rio de Janeiro</span>
+                                </div>
+                                <a href="assets/images/casamento.jpg" class="portfolio-zoom" data-lg-size="1600-1067">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Casamento Luxury</h4>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-verde">Social</span>
+                                <span class="badge bg-dark">Luxo</span>
+                            </div>
+                            <a href="portfolio-detalhe-casamento.html" class="btn btn-sm btn-outline-verde mt-3">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-4 portfolio-item cultural">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/evento-musical.jpg" alt="Festival de Verão" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h3>Festival de Verão</h3>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-users"></i> 5.000+ participantes</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Bahia</span>
+                                </div>
+                                <a href="assets/images/evento-musical.jpg" class="portfolio-zoom" data-lg-size="1600-1067">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Festival de Verão</h4>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-verde">Cultural</span>
+                                <span class="badge bg-dark">Música</span>
+                            </div>
+                            <a href="portfolio-detalhe-festival.html" class="btn btn-sm btn-outline-verde mt-3">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicione mais itens seguindo o mesmo padrão -->
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-verde btn-lg px-5">
+                    <i class="fas fa-plus-circle me-2"></i> Carregar Mais
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé (idêntico às outras páginas) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <h2>GLANZ<span class="dot">.</span></h2>
+                        <p>Criando experiências que inspiram</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Links Rápidos</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+                        <li class="nav-item"><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Conecte-se</h3>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p>&copy; 2024 GLANZ Eventos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+        // Inicializa lightGallery
+        lightGallery(document.querySelector('.portfolio-container'), {
+            selector: '.portfolio-zoom',
+            download: false,
+            zoom: true
+        });
+
+        // Inicializa Isotope para filtragem
+        document.addEventListener('DOMContentLoaded', function() {
+            const iso = new Isotope('.portfolio-container', {
+                itemSelector: '.portfolio-item',
+                layoutMode: 'fitRows'
+            });
+
+            // Filtro por categoria
+            const filterButtons = document.querySelectorAll('.btn-categoria');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove classe active de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Adiciona classe active ao botão clicado
+                    this.classList.add('active');
+                    // Filtra os itens
+                    const filterValue = this.getAttribute('data-filter');
+                    iso.arrange({ filter: filterValue });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
