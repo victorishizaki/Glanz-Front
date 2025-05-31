@@ -131,6 +131,37 @@ body {
     transform: translateY(0);
     box-shadow: none;
 }
+.btn-user {
+    background: var(--verde);
+    color: var(--branco) !important;
+    padding: 6px 18px !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: none;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-user i {
+    margin-right: 0;
+    font-size: 0.8rem;
+}
+
+.btn-user:hover {
+    background: #1ec70e !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 12px rgba(34, 237, 11, 0.3);
+}
+
+.btn-user:active {
+    background: #19b30a !important;
+    transform: translateY(0);
+    box-shadow: none;
+}
 
 .btn-outline-verde {
     border: 2px solid var(--verde);

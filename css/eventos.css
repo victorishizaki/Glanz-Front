@@ -35,7 +35,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -132,12 +132,12 @@
     padding: 20px;
     border-left: 4px solid var(--verde);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .event-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .event-card h3 {
@@ -250,7 +250,7 @@
     .events-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .modal-content {
         width: 95%;
         padding: 20px;
@@ -261,16 +261,26 @@
     .page-title {
         font-size: 2rem;
     }
-    
+
     .page-subtitle {
         font-size: 1rem;
     }
-    
+
     .events-controls {
         justify-content: center;
     }
-    
+
     #newEventBtn {
         width: 100%;
     }
+
+    .navbar-menu a {
+        color: var(--branco);
+        text-decoration: none;
+    }
+
+    .navbar-menu a:hover {
+        color: var(--verde);
+    }
+
 }

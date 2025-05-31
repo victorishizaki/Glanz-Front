@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Configurações
-    const apiUrl = 'http://localhost:8080/api/events';
-    const token = localStorage.getItem('authToken');
+    const apiUrl = 'http://10.92.199.75:8080/eventos/';
+ 
+    const token = localStorage.getItem('Token');
 
     // Verificação de segurança - Elementos do DOM
     const elements = {
